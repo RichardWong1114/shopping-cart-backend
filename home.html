@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>鄉下雜貨舖</title>
+<script type="text/javascript">
+function toggleMenu(number){
+var menu=document.getElementById("menu-"+number);
+menu.classList.toggle("hide");
+
+if(menu.style.display=="none"){
+menu.style.display="block";
+}else{
+menu.style.display="none";
+}
+}
+
+
+</script>
+
+<style type="text/css">
+
+*{margin:0; padding:0; list-style: none;
+}
+
+#menu_control{position:absolute; z-index:-2; opacity:0;
+}
+
+.header{height:50px; background-color:#003344; position:relative;
+}
+
+.logo{height:40px; width:40px;  padding:3px;
+}
+
+.logo img{vertical-align:middle;
+}
+
+.menu_btn{width:40px; height:40px; background-color:#003344; display:block; border:solid grey; position:absolute; top:5px; left:3px;
+}
+
+.menu_btn span{opacity:0; color:#fff; width:1px; height:1px; display:block; overflow:hidden;
+}
+
+.menu_btn::before{content:''; position: absolute; height:2px; left:2px; width:36px; background-color:#eeeeee; top:0; bottom:0; margin:auto; box-shadow:0px 8px 0px #eeeeee, 0px -8px 0px #eeeeee;
+}
+
+nav{width:80%;height:calc(100vh - 50px); background-color:#003344; position:absolute; top:50px; left:-100%; transition: .5s;
+}
+
+nav a{display:block; text-decoration:none; color:#eeeeee; padding: 10px 20px; border-bottom:1px solid #eeeeee;
+}
+
+#menu_control:checked ~ .header nav{left:0;
+}
+
+@media screen and (min-width:768px){.menu_btn{ display:none; } .header{display:flex;background-color:#003344; aglign-items:center;}
+nav{position:relative; left:0; display:flex; width:auto; height:auto; top:0; background-color:transparent;
+}
+nav a{border-bottom:none;
+}
+}
+
+
+
+
+
+
+.head-1{
+background-color:#003344;color:white;font-weight:bold;font-size:30px;text-align:center;padding:10px;
+
+}
+
+.head-2{
+width:150px;background-color:#eeeeee;;display:inline-block;color:#003344;font-weight:bold;
+text-align:left;margin-left:0px;margin-right:0px;
+}
+
+.content-1{
+width:1000px;margin-left:auto;margin-right:auto;
+}
+
+.content-2{
+width:1000px;margin-left:auto;margin-right:auto;
+}
+
+.content-3{
+margin-left:auto;margin-right:auto;background-color:#003344;
+}
+
+.box-1{
+width:160px;background-color:#eeeeee;display:inline-block;color:#003344;font-weight:bold;vertical-align:top;
+text-align:left;margin-left:0px;margin-right:0px;
+}
+
+.box-2{
+width:280px;height:250px;padding:10px;margin:10px;background-color:white;
+display:inline-block;vertical-align:top;
+text-align:center;height:180px;
+}
+
+.box-3{
+width:300px;padding:10px;margin:10px;background-color:#003344;color:white;
+display:inline-block;vertical-align:top;
+text-align:left;height:150px;
+}
+
+.title{font-weight:bold;text-align:center;font-size:18px;line-height:30px}
+@media screen and (max-width:600px){
+.head{font-size:24px;}
+.content-1{width:100%;text-align:center;}
+}
+
+.title-2{font-weight:bold;text-align:left;font-size:18px;line-height:30px}
+@media screen and (max-width:600px){
+.head{font-size:24px;}
+.content-2{width:100%;text-align:center;}
+}
+
+.table{width:280px;padding:10px;margin:10px;background-color:#003344;color:white;
+display:inline-block;vertical-align:top;
+text-align:left;
+}
+
+.bottom{
+background-color:#003344;color:white;font-weight:bold;font-size:30px;text-align:center;padding:10px;
+}
+
+.hide{display:none;}
+
+.box-1 a{color:#003344;font-weight:bold;text-align:left;}
+
+.box-3 a{color:white;}
+
+@media screen and (min-width:768px){.head-1{ display:none; } .header{display:flex;background-color:#003344; aglign-items:center;}
+nav{position:relative; left:0; display:flex; width:auto; height:auto; top:0; background-color:transparent;
+}
+
+</style>
+</head>
+
+<style>A {text-decoration:none;}</style>
+
+<body style="margin:0px;background-color:#eeeeee;">
+
+<input type="checkbox" name="" id="menu_control">
+
+
+
+<div class="header">
+<h1 class="logo">
+<a href="http://www.countrysidegrocery.com"><img src="分頁/picture/85074757_108253377417346_7924587086324170752_n.jpg" height="35"></a>
+</h1>
+
+
+
+
+<br/>
+<label for="menu_control" class="menu_btn">>
+<span>menu</span>
+</label>
+
+<font color="#003344" face="微軟正黑體">
+
+<nav>
+<h1 style="color:#eeeeee">鄉下雜貨舖</h1>
+<a href="http://www.countrysidegrocery.com">👉主頁</a>
+<a href="分頁/鄉下雜貨舖簡介.html">👉美國貨品團購</a>
+<a href="分頁/指定貨品代購.html">👉指定貨品代購</a>
+<a href="分頁/轉購托運.html">👉轉購托運</a>
+<a href="分頁/關於我們.html">👉關於我們️</a>
+<a href="分頁/工程進行中.html">👉常見問題</a>
+</nav>
+
+</font>
+
+</div>
+
+
+
+
+<font color="#003344" face="微軟正黑體">
+<div class="head-1">鄉下雜貨舖</div>
+
+
+
+
+
+<br/>
+
+
+</div>
+
+<div class="content-2";>
+
+
+<div class="box-2">
+<a href="分頁/美國貨品團購.html"><img src="分頁/picture/IMG-20200313-WA0056.jpg"></img></a>
+<div class="title">美國貨品預購</div>
+<div></div>
+</div>
+
+
+
+<div class="box-2">
+<a href="分頁/指定貨品代購.html"><img src="分頁/picture/IMG-20200313-WA0057.jpg"></img></a>
+<div class="title">指定貨品代購</div>
+<div></div>
+</div>
+
+
+
+
+<div class="box-2">
+<a href="分頁/轉購托運.html"><img src="分頁/picture/IMG-20200313-WA0058.jpg"></img></a>
+<div class="title">轉購托運</div>
+<div></div>
+</div>
+
+
+
+
+
+<div class="box-2">
+<a href="分頁/關於我們.html"><img src="分頁/picture/about us.jpg" height="129"></img></a>
+<div class="title">關於我們</div>
+</div>
+
+<div class="box-2">
+<a href=""><img src="分頁/picture/create-contact-us-page-wordpress.jpg" height="129"></img></a>
+<div class="title">與我們聯絡</div>
+</div>
+
+<div class="box-2">
+<a href="關於我們.html"><img src=""></img></a>
+<div class="title">我們的聯盟戰友</div>
+</div>
+</body>
+
+</font>
+
+
+</div>
+
+
+<body style="margin:0px;background-color:#003344">
+
+
+
+
+
+
+<div class="content-3";>
+<font face="微軟正黑體">
+<div class="box-3">
+
+<div class="title-2">關於我們</div>
+<div>最新消息</div>
+<div>服務條款</div>
+<div>私隱政策</div>
+</div>
+</font>
+
+
+<div class="box-3">
+<font face="微軟正黑體">
+<div class="title-2">聯絡我們️</div>
+</font>
+<div>📞+852 6744 1300</div>
+<div>📧 customerservice@countrysidegrocery.com</div>
+<img src="分頁/picture/facebook-logo(1).jpg" height="20"></img><a href="https://m.me/108154410760576">Facebook Messager</a><br/>
+<a href="https://www.facebook.com/鄉下雜貨舖-108154410760576/"><img src="分頁/picture/facebook-logo(1).jpg"></img></a>
+<a href="https://www.instagram.com/localhkguy/"><img src="分頁/picture/instagram-logo(1).jpg"></img></a>
+</div>
+
+<div class="box-3">
+<font face="微軟正黑體">
+<div class="title-2">付款方法</div>
+</font>
+<img src="分頁/picture/payme-logo_full_color(1).png"></img>
+<img src="分頁/picture/Alipay HK(1).png"></img>
+<img src="分頁/picture/BOCHK logo(1).png"></img>
+</div>
+
+<font face="微軟正黑體" size="-1">
+<center><div class="box-3">
+Copyright &copy; 2020 鄉下雜貨舖
+</div>
+</font>
+</center>
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
