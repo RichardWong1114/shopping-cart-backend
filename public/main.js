@@ -3,7 +3,7 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [];
 
 async function getProducts() {
-    const response = await axios.get('countrysidegrocery-uvhjb.ondigitalocean.app/products');
+    const response = await axios.get('https://countrysidegrocery-uvhjb.ondigitalocean.app/products');
     console.log(response.data);
     products = response.data.products
 
