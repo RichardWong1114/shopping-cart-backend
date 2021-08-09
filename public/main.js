@@ -1,9 +1,10 @@
 let carts = document.querySelectorAll('.add-cart');
-
+let stage = 'dev';
 let products = [];
 
 async function getProducts() {
-    const response = await axios.get('https://countrysidegrocery-uvhjb.ondigitalocean.app/products');
+    const host = stage === 'dev' ? 'http://localhost:5000' : 'https://countrysidegrocery-uvhjb.ondigitalocean.app';
+    const response = await axios.get(`${host}/products`);
     console.log(response.data);
     products = response.data.products
 
@@ -21,8 +22,8 @@ function poplateProducts() {
             <img  class="products1" src="${product.image}" alt="${product.name}">
             <h1>${product.name}</h1>
             <p>$${product.price}</p>
-            <button class="btn1"><a class="add-cart cart${i+1}" href="#">加入購物車</a></button>
-            <button class="btn2"><a href="">產品詳情</a></button>
+            <a class="add-cart cart${i+1}" href="#"><button class="btn1">加入購物車</button></a>
+            <a href=""><button class="btn2">產品詳情</button></a>
         </div>
             `
         )
@@ -287,7 +288,7 @@ function displayCheckout(){
 
         productContainer.innerHTML +=`
         <div>
-        <button  class="btn1" type="submit">結帳 $${cartCost}</button>
+        <button  class="btn1">結帳 $${cartCost}</button>
         </div>
         `;
 
