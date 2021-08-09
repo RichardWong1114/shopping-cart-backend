@@ -1,5 +1,5 @@
 stage = 'dev';
-const host = stage === 'dev' ? 'http://localhost:5000' : 'https://countrysidegrocery-uvhjb.ondigitalocean.app/';
+const host = stage === 'dev' ? 'http://localhost:5000' : 'https://countrysidegrocery-uvhjb.ondigitalocean.app';
 
 const startCheckout = document.getElementById('startCheckout');
 
@@ -22,4 +22,4 @@ function myProducts() {
     }
 
     return products;
-};
+}

@@ -1103,6 +1103,7 @@ border-radius: 50%;
 
 .btn3:hover{
   background-color: rgba(255, 208, 0, 0.589);
+  transition: 0.5s;
 }
 
 .products-container{
